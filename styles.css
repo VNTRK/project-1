@@ -5,7 +5,9 @@ section{
     height: 100vh;
     width: 100%;
 }
+
 /*start of styles for section-1*/
+
 .title, .price-card, .name-card {
     font-family: "Josefin Sans", sans-serif;;
     font-style: normal;
