@@ -2,10 +2,90 @@
 body{
     margin: 0;
 }
+/*------------------------------------------------start of header------------------------------------*/
+header {
+    height: 70vh;
+    background-image: url("img/Ihor-img/coffe.png");
+    background-position: center;
+    background-size: cover;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav>a {
+    margin: 20px 0 0 40px;
+    text-decoration: none;
+
+}
+.nav-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #FF4B32;
+    font-family: "Josefin Sans", sans-serif;;
+    font-style: normal;
+    font-weight: 700;
+}
+
+nav>a:nth-child(2) {
+    color: #FF4B32;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+nav>a {
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header-div {
+    height: 75%;
+    margin-left: 145px;
+    width: 524px;
+    color: #FFFFFF;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
+}
+.header-div>h1 {
+    font-size: 58px;
+    font-family: "Josefin Sans", sans-serif;;
+    font-style: normal;
+    font-weight: 500;
+
+}
+.header-div>p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.header-div>button {
+    margin-top: 20px;
+    color: #FFFFFF;
+    padding: 16px 35px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    background-color: #FF4B32;
+    border: none;
+    border-radius: 5px;
+}
+/*------------------------------------------------end of header------------------------------------*/
 section{
     height: 100vh;
     width: 100%;
 }
+
 
 /*start of styles for section-1*/
 
@@ -76,8 +156,143 @@ section{
 
 /*end of styles for section-1*/
 
+/*---start--of--section-2--name--Gallery*/
+#section-gallery {
+    height: 1160px; /*113vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#section-gallery>.box-gallery {
+    width: 1146px;
+    display: grid;
+    grid-template-areas:
+        "gallery-1 gallery-2 gallery-3"
+        "gallery-4 gallery-5 gallery-6";
+    grid-template-rows: 330px 230px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin: 50px 0;
+}
+#image-gallery-1 {
+    grid-area: gallery-1;
+    background-image: url("img/image_gallery_1.png");
+}
+#image-gallery-2 {
+    grid-area: gallery-2;
+    background-image: url("img/image_gallery_2.png");
+}
+#image-gallery-3 {
+    grid-area: gallery-3;
+    background-image: url("img/image_gallery_3.png");
+}
+#image-gallery-4 {
+    grid-area: gallery-4;
+    background-image: url("img/image_gallery_4.png");
+}
+#image-gallery-5 {
+    grid-area: gallery-5;
+    background-image: url("img/image_gallery_5.png");
+}
+#image-gallery-6 {
+    grid-area: gallery-6;
+    background-image: url("img/image_gallery_6.png");
+}
+a#link-load-more {
+    text-decoration: none;
+    color: #FF4B32;
+    margin: 25px 0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+section#section-gallery>h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 55.9px;
+    margin: 10px 0;
+}
+
+section#section-gallery>p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+    margin: 10px 0;
+}
+/*---end--of--section-2--name--Gallery*/
+
+/*----------------------------------------------------section-3-----------------------------------------------------*/
 
 
+.section-3 {
+    color: #FFFFFF;
+    height: 65vh;
+    background-image: url("img/Ihor-img/Follow-us-1.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-3>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+}
+.section-3>div>p {
+    margin-bottom: 65px;
+    color: #FF4B32;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.section-3>div>h1 {
+    margin: 0;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.number, .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.number {
+    margin-top: 60px;
+}
+.number>img, .email>img  {
+    margin-right: 15px;
+}
+.number>p {
+    margin: 0;
+}
+.section-3-link>img {
+    margin: 5px 20px;
+}
+
+
+/*----------------------------------------------------end-section-3--------------------------------------------------*/
 
 
 
@@ -150,78 +365,6 @@ section{
 }
 /*end of styles for section-4*/
 
-/*---start--of--section-2--name--Gallery*/
-#section-gallery {
-    height: 1160px; /*113vh;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#section-gallery>.box-gallery {
-    width: 1146px;
-    display: grid;
-    grid-template-areas:
-        "gallery-1 gallery-2 gallery-3"
-        "gallery-4 gallery-5 gallery-6";
-    grid-template-rows: 330px 230px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
-    margin: 50px 0;
-}
-#image-gallery-1 {
-    grid-area: gallery-1;
-    background-image: url("img/image_gallery_1.png");
-}
-#image-gallery-2 {
-    grid-area: gallery-2;
-    background-image: url("img/image_gallery_2.png");
-}
-#image-gallery-3 {
-    grid-area: gallery-3;
-    background-image: url("img/image_gallery_3.png");
-}
-#image-gallery-4 {
-    grid-area: gallery-4;
-    background-image: url("img/image_gallery_4.png");
-}
-#image-gallery-5 {
-    grid-area: gallery-5;
-    background-image: url("img/image_gallery_5.png");
-}
-#image-gallery-6 {
-    grid-area: gallery-6;
-    background-image: url("img/image_gallery_6.png");
-}
-a#link-load-more {
-    text-decoration: none;
-    color: #FF4B32;
-    margin: 25px 0;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27px;
-}
-section#section-gallery>h1 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 43px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 55.9px;
-    margin: 10px 0;
-}
-section#section-gallery>p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28.8px;
-    margin: 10px 0;
-}
-/*---end--of--section-2--name--Gallery*/
-
 /*---start--footer---*/
 footer {
     height: 406px;
@@ -252,6 +395,7 @@ footer>div>div>h2 {
     line-height: 150%;
     margin: 10px 0;
 }
+
 footer>p {
     color: var(--white, #FFF);
     text-align: center;
@@ -317,4 +461,5 @@ footer>div>div>#footer-text-coffee>p {
     margin-top: 2px;
 }
 /*---end--footer--*/
+
 
